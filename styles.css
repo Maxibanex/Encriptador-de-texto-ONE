@@ -20,12 +20,14 @@ main{
 
 .presentacion__escritura{
     width: 50%;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
 .presentacion__mensaje{
     width: 50%;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -50,9 +52,9 @@ main{
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
-    margin-top: 20;
+    margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    position: absolute;
 }
 .mensaje:focus{
     outline:none;
@@ -112,4 +114,39 @@ main{
 .btn-copiar:active{
     background-color: #0A3871;
     color: white;
+}
+
+
+@media (max-width: 1174px){
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion__escritura{
+        
+    }
+
+    .presentacion__mensaje{
+        margin-top: 5%;
+    }
+
+    .text-area{
+        
+    }
+
+    .mensaje{
+        margin-left: 0px;
+        width: auto;
+        background-image: none;
+    }
+
+    .btn-copiar{
+        margin-left: 5px;
+        
+    }
+
 }

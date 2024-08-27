@@ -37,6 +37,7 @@ function habilitarCopiar(){
     } else{
         document.getElementById('btnCopiar').setAttribute("hidden", "");
         document.getElementById('btnCopiar').setAttribute("disabled", "");
+        mensaje.style.backgroundImage = 'url("/imagenes/Muñeco.png")';
     }
     return;
 }
